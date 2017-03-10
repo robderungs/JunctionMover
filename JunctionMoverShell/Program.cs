@@ -211,8 +211,6 @@ namespace JunctionMoverShell
 
             SharpShell.SharpIconOverlayHandler.SharpIconOverlayHandler h;
 
-            System.Threading.Thread.Sleep(2000);
-
             _folderIconService.SetIcon(sourcePath, iconFile.FullName);
             _folderIconService.SetIcon(destinationPath, iconFile.FullName);
         }
