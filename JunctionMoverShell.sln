@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JunctionMoverShell", "Junct
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JunctionMoverShell.Model", "JunctionMoverShell.Model\JunctionMoverShell.Model.csproj", "{23E6C63F-3764-4338-90BB-E4D746C3C802}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JunctionMoverShell.Services", "JunctionMoverShell.Services\JunctionMoverShell.Services.csproj", "{3221751C-78F0-499E-B364-22F66CE5E936}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{23E6C63F-3764-4338-90BB-E4D746C3C802}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{23E6C63F-3764-4338-90BB-E4D746C3C802}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{23E6C63F-3764-4338-90BB-E4D746C3C802}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3221751C-78F0-499E-B364-22F66CE5E936}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3221751C-78F0-499E-B364-22F66CE5E936}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3221751C-78F0-499E-B364-22F66CE5E936}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3221751C-78F0-499E-B364-22F66CE5E936}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -97,6 +97,10 @@
       <Project>{23e6c63f-3764-4338-90bb-e4d746c3c802}</Project>
       <Name>JunctionMoverShell.Model</Name>
     </ProjectReference>
+    <ProjectReference Include="..\JunctionMoverShell.Services\JunctionMoverShell.Services.csproj">
+      <Project>{3221751C-78F0-499E-B364-22F66CE5E936}</Project>
+      <Name>JunctionMoverShell.Services</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

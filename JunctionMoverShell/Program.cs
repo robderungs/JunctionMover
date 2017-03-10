@@ -15,6 +15,7 @@ using StructureMap.Graph.Scanning;
 using JunctionMoverShell.Model.Command;
 using JunctionMoverShell.Model.Command.Attributes;
 using JunctionMoverShell.Model.Arguments;
+using JunctionMoverShell.Services.FileSystem.Directory;
 
 namespace JunctionMoverShell
 {
@@ -139,27 +140,9 @@ namespace JunctionMoverShell
         }
     }
 
-    public interface IDirectoryMoverService
-    {
-        bool Move(string source, string destination);
-        bool Move(DirectoryInfo sourceDirectory, DirectoryInfo destinationDirectory);
-    }
 
-    public class BasicDirectoryMoverService : IDirectoryMoverService
-    {
-        public bool Move(DirectoryInfo sourceDirectory, DirectoryInfo destinationDirectory)
-        {
-            new Computer().FileSystem.MoveDirectory(sourceDirectory.FullName, destinationDirectory.FullName, UIOption.AllDialogs);
-            return true;
-        }
 
-        public bool Move(string source, string destination)
-        {
-            var sourceDirectory = new DirectoryInfo(source);
-            var destinationDirectory = new DirectoryInfo(destination);
-            return Move(sourceDirectory, destinationDirectory);
-        }
-    }
+  
 
     [CommandId(1000)]
     [CommandDescription("Moves a folder to the ProgramFiles folder")]
